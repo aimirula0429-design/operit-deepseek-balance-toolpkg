@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "toolpkg_id": "com.aimirula.deepseek_balance",
+  "version": "1.0.0",
+  "author": "aimirula0429-design",
+  "main": "dist/main.js",
+  "display_name": {
+    "zh": "DeepSeek 余额查询",
+    "en": "DeepSeek Balance",
+    "default": "DeepSeek Balance"
+  },
+  "description": {
+    "zh": "查询 DeepSeek 账户余额（货币、总余额、赠送、充值）。自动读取 Operit 已配置的 DeepSeek API Key，无需手动填写。",
+    "en": "Query DeepSeek account balance (currency, total, granted, topped-up). Reads the DeepSeek API key configured in Operit automatically.",
+    "default": "Query DeepSeek account balance. Reads the DeepSeek API key configured in Operit automatically."
+  },
+  "enabled_by_default": true,
+  "subpackages": [
+    {
+      "id": "deepseek_balance",
+      "entry": "dist/packages/deepseek_balance.js",
+      "enabled_by_default": true,
+      "display_name": {
+        "zh": "DeepSeek 余额查询",
+        "en": "DeepSeek Balance"
+      },
+      "description": {
+        "zh": "查询 DeepSeek 账户余额，自动读取 Operit 中配置的 API Key。",
+        "en": "Query DeepSeek account balance, reading the API key configured in Operit automatically."
+      }
+    }
+  ]
+}
